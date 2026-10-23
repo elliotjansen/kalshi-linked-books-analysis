@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 
-time_bucket_size = 5
+time_bucket_size = 1
 def main():
     con = duckdb.connect()
     MARKETS = "data/two_team_markets_clean.parquet"
@@ -79,7 +79,7 @@ def main():
 
     # plot a chart, using the machinery defined in the function below
     fig = plot_gap_chart(comparison_percentages, labels, total_per_price_band, time_bucket_size)
-    fig.savefig(f"chart1_percent_{time_bucket_size}s.png", dpi=200)
+    fig.savefig("chart-1.png", dpi=200)
     plt.show()
 
 

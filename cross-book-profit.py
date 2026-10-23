@@ -170,11 +170,11 @@ def main():
 
 
 # plot the profit distribution charts
-    # fig = plot_profit_distribution(pairs_df)
-    # fig.savefig("chart2_profit_distribution.png", dpi=200)
+    fig = plot_profit_distribution(pairs_df)
+    fig.savefig("chart-2.png", dpi=200)
 
-    # fig = plot_timing(pairs_df)
-    # fig.savefig("chart3_timing.png", dpi=200)
+    fig = plot_timing(pairs_df)
+    fig.savefig("chart-3.png", dpi=200)
 
     #plt.show()
 
